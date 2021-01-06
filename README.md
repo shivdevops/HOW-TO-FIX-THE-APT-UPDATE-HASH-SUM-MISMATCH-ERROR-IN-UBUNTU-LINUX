@@ -46,7 +46,7 @@ Run apt-get update or update and find out what key words to search for in /etc/a
     
    Search the /etc/apt tree for the keyword(s):
       
-     ` ` ` sudo find /etc/apt -type f -exec egrep -in "DEP-11" "{}" /dev/null ";" ` ` `
+     sudo find /etc/apt -type f -exec egrep -in "DEP-11" "{}" /dev/null ";" 
         
         /apt.conf.d/50appstream:1:## This file is provided by appstreamcli(1) to download DEP-11
         /apt.conf.d/50appstream:6: deb::DEP-11  {
